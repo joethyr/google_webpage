@@ -1,14 +1,32 @@
-.navbar {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
   display: flex;
-  justify-content: space-between;
-  margin-top: 18px;
-  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 14px;
+}
+
+.firstNav {
+  float: left;
+}
+
+.secondNav {
+  float: right;
+}
+
+.secondNav a:hover {
+  color: #797979;
 }
 
 a {
   font-family: arial, sans-serif;
   font-size: small;
-  color: #686868;
+  color: #424242;
   text-decoration: none;
   padding-left: 15px;
 }
@@ -17,10 +35,47 @@ a:hover {
   text-decoration: underline;
 }
 
-.secondNav a:hover {
-  color: #a0a0a0;
+#avatarPic {
+  height: 35px;
+  width: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
 }
 
-.navButtn {
-  float: right;
+#navButtn {
+  margin-left: 15px;
+  color: #686868;
+}
+
+#navButtn:hover {
+  color: #919191;
+  cursor: pointer;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.mainLogo {
+  display: block;
+  margin: 135px auto;
+  margin-bottom: 30px;
+}
+
+form {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.search {
+  width: 100%;
+  padding: 4px 10px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  height: 44px;
+  margin: 0 auto;
+}
+
+input {
 }
